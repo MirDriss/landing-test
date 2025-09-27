@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simulation de sensibilisation — Exercice autorisé</title>
+  <style>
+    :root{--bg:#f4f6f8;--card:#ffffff;--accent:#1a73e8;--muted:#6b7280}
+    body{margin:0;font-family:Inter, "Helvetica Neue", Arial, sans-serif;background:var(--bg);color:#111;}
+    .wrap{max-width:920px;margin:36px auto;padding:0 18px;}
+    .card{background:var(--card);border-radius:10px;box-shadow:0 10px 30px rgba(2,6,23,0.06);overflow:hidden}
+    .hero{width:100%;display:block;height:auto;object-fit:cover}
+    .content{padding:26px;}
+    .notice{display:inline-block;background:#fff4db;color:#8a4b00;padding:8px 12px;border-radius:8px;font-weight:700;margin-bottom:12px}
+    h1{margin:6px 0 10px;font-size:22px;line-height:1.15}
+    p{margin:0 0 12px;color:#333;line-height:1.5}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700}
+    .small{font-size:13px;color:var(--muted)}
+    .tips{margin-top:14px;padding:14px;border-radius:8px;background:#fbfbfb;color:#333;font-size:14px}
+    footer{padding:18px;text-align:center;font-size:13px;color:#888;background:#fafafa}
+    @media (max-width:520px){h1{font-size:18px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <!-- Image : landing_page.png must be at repo root -->
+      <img src="landing_page.png" alt="Visuel de la simulation" class="hero">
+
+      <div class="content">
+        <div class="notice">Simulation autorisée</div>
+
+        <h1>Test de sensibilisation — Simulation de phishing</h1>
+
+        <p class="small">
+          Vous avez été redirigé(e) vers cette page dans le cadre d’un exercice de sécurité
+          <strong>autorisé</strong> par la direction et la DSI. L’objectif est pédagogique : améliorer
+          la vigilance face aux e-mails frauduleux.
+        </p>
+
+        <p>
+          Si vous avez cliqué sur un lien précédemment, ne paniquez pas. Suivez les recommandations ci-dessous
+          et, le cas échéant, signalez l’incident au support.
+        </p>
+
+        <div style="margin:18px 0;">
+          <a class="btn" href="#" onclick="alert('Merci — votre réaction a été enregistrée (simulation).');return false;">
+            J'ai compris / Signaler
+          </a>
+        </div>
+
+        <div class="tips">
+          <strong>Que faire ?</strong>
+          <ul>
+            <li>Ne partagez jamais vos mots de passe par e-mail.</li>
+            <li>Vérifiez l'adresse de l'expéditeur et survolez les liens avant de cliquer.</li>
+            <li>Si vous avez saisi des identifiants, contactez immédiatement le support IT : <a href="mailto:security@ton-domaine.com">security@ton-domaine.com</a></li>
+          </ul>
+        </div>
+
+        <p style="margin-top:14px;color:#555;font-size:14px">
+          Ressources : <a href="https://intra.ton-domaine.com/sec/formation" target="_blank">Formation sécurité interne</a>
+        </p>
+      </div>
+      <footer>
+        Exercice réalisé avec l'autorisation de la direction — contact : security@ton-domaine.com
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
